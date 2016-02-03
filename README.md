@@ -1,20 +1,28 @@
-# New Backend Challenge 
+# Offer up backend Challenge 
 
+[![Book session on Codementor](https://cdn.codementor.io/badges/book_session_github.svg)](https://www.codementor.io/chb0codementor?utm_source=github&utm_medium=button&utm_term=chb0codementor&utm_campaign=github)
+
+[![My Stack Overflow Profile][2]][1] 
+  [1]: http://stackexchange.com/users/673865
+  [2]: http://stackoverflow.com/users/flair/889053.png
+  
 Hello! For your backend challenge you are tasked with creating a very simple price recommendation micro service:
 We have made publicly available a database (postgresql) with all the information you will need. (just dummy data, the numbers do not reflect reality in any conceivable way)
 Here are your connection details:
+
 host: offerupchallenge.cgtzqpsohu0g.us-east-1.rds.amazonaws.com:5432 user: offerupchallenge
 password: ouchallenge
-name: itemprices
+database name: itemprices
 table: itemPrices_itemsale (you can ignore the other ones)
 
 The itemPrices_itemsale table describes various items in the system and contains 6 columns:
-id (int): unique id for an item, created by Postgres
-title (char): title of the item (e.g. Xbox One)
-list_price (int): the price at which the item was listed
-sell_price (int): the price at which the item was sold
-city (char): the city in which the item was listed
-cashless (bool): true / false the seller will accept a credit card payment
+
+* id (int): unique id for an item, created by Postgres
+* title (char): title of the item (e.g. Xbox One)
+* list_price (int): the price at which the item was listed
+* sell_price (int): the price at which the item was sold
+* city (char): the city in which the item was listed
+* cashless (bool): true / false the seller will accept a credit card payment
 
 
 The price recommendation calculation will be very simple: given an item title and city, return the most frequently occurring 
@@ -60,7 +68,9 @@ And if neither are supplied:
     }
 ```
 For the purposes of this challenge dont worry about partial item title matches, assume we are only concerned with exact matches (we will test the api responses, and the test will just use values from the database)
-Along with the api structure, the only requirement is that you build your service on ubuntu 14.04 using a virtual machine. You can follow these instructions:
+Along with the api structure, the only requirement is that you build your service on ubuntu 14.04 using a virtual machine. 
+
+You can follow these instructions:
 http://www.discoposse.com/index.php/2014/11/11/starting-with-vagrant-and-virtualbox-a-basic-ubuntu-14-04-lts-server/
 Please limit your VM to 1 CPU + 1024 MB memory
 
