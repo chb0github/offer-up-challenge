@@ -1,11 +1,10 @@
-# Offer up backend Challenge 
-
-[![Book session on Codementor](https://cdn.codementor.io/badges/book_session_github.svg)](https://www.codementor.io/chb0codementor?utm_source=github&utm_medium=button&utm_term=chb0codementor&utm_campaign=github)
-
 [![My Stack Overflow Profile][2]][1] 
   [1]: http://stackexchange.com/users/673865
   [2]: http://stackoverflow.com/users/flair/889053.png
-  
+
+# Offer up backend Challenge 
+
+
 Hello! For your backend challenge you are tasked with creating a very simple price recommendation micro service:
 We have made publicly available a database (postgresql) with all the information you will need. (just dummy data, the numbers do not reflect reality in any conceivable way)
 Here are your connection details:
