@@ -89,4 +89,3 @@ query to target:
 ```
 select city,title, list_price, count(list_price) as c from "itemPrices_itemsale" GROUP BY list_price,city,title order by city, c DESC ;
 ```
-Test
